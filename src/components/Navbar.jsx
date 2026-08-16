@@ -42,12 +42,9 @@ export default function Navbar({ activeTab, setActiveTab, masteredCount, muted, 
             }}
           />
           <div>
-            <h1 style={{ fontSize: '1.4rem', fontWeight: 900, textTransform: 'uppercase', margin: 0, lineHeight: 1.1 }}>
+            <h1 style={{ fontSize: '1.4rem', fontWeight: 900, textTransform: 'uppercase', margin: 0, lineHeight: 1 }}>
               PALWORLD <span className="gradient-text">HUB</span>
             </h1>
-            <p style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 600, margin: 0 }}>
-              BY <span style={{ color: '#00f0ff', fontWeight: 800 }}>OVIVEKO</span> &bull; ULTIMATE PAL PICKER
-            </p>
           </div>
         </div>
 
