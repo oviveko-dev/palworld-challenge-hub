@@ -22,10 +22,14 @@
 
 ---
 
-A feature-rich, high-performance web application designed for **Palworld Content Creators, Streamers, and Hardcore Challenge Players** to pick Pals, build combat challenges, draft teams, and track mastered Pals!
+## 🌐 Live Website & Demo
+👉 **[https://palworld-challenge-hub.vercel.app/](https://palworld-challenge-hub.vercel.app/)**
 
 ---
 
+A feature-rich, high-performance web application designed for **Palworld Content Creators, Streamers, and Hardcore Challenge Players** to pick Pals, build combat challenges, draft teams, and track mastered Pals!
+
+---
 
 ## 🌟 Key Features
 
@@ -106,6 +110,23 @@ A feature-rich, high-performance web application designed for **Palworld Content
    ```bash
    npm run build
    ```
+
+---
+
+## 📤 Push to GitHub
+
+To push updates to your GitHub repository:
+
+```bash
+# 1. Stage all project files
+git add .
+
+# 2. Commit changes
+git commit -m "Update README with live Vercel link"
+
+# 3. Push to GitHub main branch
+git push -u origin main
+```
 
 ---
 
