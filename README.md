@@ -109,23 +109,6 @@ A feature-rich, high-performance web application designed for **Palworld Content
 
 ---
 
-## 📤 Push to GitHub
-
-To push updates to your GitHub repository:
-
-```bash
-# 1. Stage all project files
-git add .
-
-# 2. Commit changes
-git commit -m "Clean PalDB text references"
-
-# 3. Push to GitHub main branch
-git push -u origin main
-```
-
----
-
 ## 📄 License
 
 This project is created by **[OVIVEKO](https://github.com/oviveko-dev)** under the [MIT License](LICENSE).
