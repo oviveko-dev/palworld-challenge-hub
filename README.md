@@ -2,10 +2,24 @@
 
 [![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite)](https://vitejs.dev/)
+[![Author](https://img.shields.io/badge/Author-OVIVEKO-00F0FF?logo=github)](https://github.com/oviveko-dev)
+[![YouTube](https://img.shields.io/badge/YouTube-@oviveko-FF0000?logo=youtube)](https://www.youtube.com/@oviveko)
+[![X](https://img.shields.io/badge/X-@OVIVEKO-1DA1F2?logo=x)](https://x.com/OVIVEKO)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Palworld](https://img.shields.io/badge/Palworld-v0.4.x-FF6F00)](https://paldb.cc/)
 
 A feature-rich, high-performance web application designed for **Palworld Content Creators, Streamers, and Hardcore Challenge Players** to pick Pals, build combat challenges, draft teams, and track mastered Pals!
+
+---
+
+## 👨‍💻 Author & Connect With Me
+
+Crafted with ❤️ by **OVIVEKO**:
+
+- **💻 GitHub**: [github.com/oviveko-dev](https://github.com/oviveko-dev)
+- **▶️ YouTube**: [@oviveko](https://www.youtube.com/@oviveko)
+- **🐦 X (Twitter)**: [@OVIVEKO](https://x.com/OVIVEKO)
+- **✉️ Work Email**: [workforoviveko@gmail.com](mailto:workforoviveko@gmail.com)
 
 ---
 
@@ -69,7 +83,7 @@ A feature-rich, high-performance web application designed for **Palworld Content
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/palworld-challenge-hub.git
+   git clone https://github.com/oviveko-dev/palworld-challenge-hub.git
    cd palworld-challenge-hub
    ```
 
@@ -106,7 +120,7 @@ git add .
 git commit -m "Initial commit: Palworld Challenge Hub & Ultimate Pal Picker"
 
 # 4. Add your GitHub remote repository link (Create a new empty repo on GitHub first)
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+git remote add origin https://github.com/oviveko-dev/palworld-challenge-hub.git
 
 # 5. Push code to GitHub
 git push -u origin main
