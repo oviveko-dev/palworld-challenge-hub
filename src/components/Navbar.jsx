@@ -95,7 +95,7 @@ export default function Navbar({ activeTab, setActiveTab, masteredCount, muted, 
             className={`btn-nav ${activeTab === 'generator' ? 'active' : ''}`}
             style={navBtnStyle(activeTab === 'generator')}
           >
-            <Flame size={18} />
+            <img src="/lamball_icon.png" style={{ width: '18px', height: '18px', borderRadius: '50%', objectFit: 'cover' }} alt="Idea Builder" />
             Idea Builder
           </button>
 
