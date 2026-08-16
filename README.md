@@ -26,17 +26,6 @@ A feature-rich, high-performance web application designed for **Palworld Content
 
 ---
 
-## 👨‍💻 Creator & Contact Information
-
-| Channel / Platform | Link & Details |
-| :--- | :--- |
-| 👤 **Developer / Creator** | **OVIVEKO** |
-| 📧 **Work Email** | [workforoviveko@gmail.com](mailto:workforoviveko@gmail.com) |
-| 🐱 **GitHub Profile** | [github.com/oviveko-dev](https://github.com/oviveko-dev) |
-| 𝕏 **X (Twitter)** | [@OVIVEKO (x.com/OVIVEKO)](https://x.com/OVIVEKO) |
-| ▶️ **YouTube Channel** | [@oviveko (youtube.com/@oviveko)](https://www.youtube.com/@oviveko) |
-
----
 
 ## 🌟 Key Features
 
