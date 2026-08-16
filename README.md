@@ -14,7 +14,7 @@
 [![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Palworld](https://img.shields.io/badge/Palworld-v0.4.x-FF6F00)](https://paldb.cc/)
+[![Palworld](https://img.shields.io/badge/Palworld-v0.4.x-FF6F00)](https://palworld.fandom.com/)
 
 </div>
 
@@ -41,7 +41,7 @@ A feature-rich, high-performance web application designed for **Palworld Content
 ### 🎡 1. Interactive Wheel of Pals (Studio Dashboard)
 - **3-Column Dashboard Layout**: Special Filters sidebar, glowing HTML5 Canvas spin wheel, and Hero Pal Challenge card.
 - **299 Paldeck Dataset**: Complete dataset including all original Pals and 11 Terraria Crossover Collaboration Pals.
-- **Official PalDB CDN Artwork**: Live high-resolution WebP icons for every Pal.
+- **Official Palworld Artwork**: Live high-resolution WebP icons for every Pal.
 - **Authentic Partner Skills**: Detailed Partner Skill names and full mechanical effect descriptions.
 - **Multi-Select Filters**: Combine multiple filters simultaneously (e.g. `Gun Users` 🔫 + `Trolling / Chaotic` 🤡 + `S+ Tier` 🏆 + `Collaboration Pals` 🤝).
 - **🚫 Pal Excluder System**: Search and exclude specific Pals from wheel spins, with quick one-click exclude on the winner card.
@@ -67,7 +67,7 @@ A feature-rich, high-performance web application designed for **Palworld Content
 - **3-Reel Pal Slot Machine**: Spin multi-reel drafts to pick your 3-Pal party for boss fights.
 
 ### 📺 5. Streamer HUD & Tower Boss Tracker
-- **9 Official PalDB Tower Bosses**: Complete stats and HP for Normal and Hard Mode Tower Bosses.
+- **9 Official Tower Bosses**: Complete stats and HP for Normal and Hard Mode Tower Bosses.
 - **Stream Overlay Mode**: Transparent HUD mode tailored for OBS/Streamlabs overlay integration.
 
 ### 📖 6. Searchable Paldex Explorer
@@ -127,7 +127,7 @@ To push updates to your GitHub repository:
 git add .
 
 # 2. Commit changes
-git commit -m "Update creator profile and contact info for OVIVEKO"
+git commit -m "Clean PalDB text references"
 
 # 3. Push to GitHub main branch
 git push -u origin main
@@ -138,4 +138,4 @@ git push -u origin main
 ## 📄 License
 
 This project is created by **[OVIVEKO](https://github.com/oviveko-dev)** under the [MIT License](LICENSE).
-Palworld assets and image URLs belong to Pocketpair, Inc. and PalDB.cc.
+Palworld assets belong to Pocketpair, Inc.

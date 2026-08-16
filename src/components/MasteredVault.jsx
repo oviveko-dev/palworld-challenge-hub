@@ -631,7 +631,7 @@ export default function MasteredVault({ masteredVault, onToggleVault, onClearVau
                   </label>
                   <input
                     type="url"
-                    placeholder="https://cdn.paldb.cc/..."
+                    placeholder="https://example.com/pal_icon.webp"
                     value={customImage}
                     onChange={(e) => setCustomImage(e.target.value)}
                     style={{

@@ -3,7 +3,7 @@ import { ELEMENTS, PALS_DATA } from '../data/palsData';
 import { sound } from '../utils/audio';
 import { Play, Pause, RotateCcw, Plus, Minus, CheckSquare, Square, ShieldAlert, Skull, Tv, Flame, Trophy, FlameKindling } from 'lucide-react';
 
-// Official PalDB Tower Bosses Dataset (Excluding raid/world bosses as requested)
+// Official Palworld Tower Bosses Dataset (Excluding raid/world bosses as requested)
 export const TOWER_BOSSES = [
   {
     id: 'zoe_grizzbolt',
@@ -146,7 +146,7 @@ export default function StreamOverlayHUD({ activePal, masteredVault, onToggleVau
             <Tv color="#00f0ff" /> STREAMER & CREATOR <span className="gradient-text">HUD</span>
           </h2>
           <p style={{ color: '#94a3b8', fontSize: '0.85rem' }}>
-            Interactive overlay dashboard with official PalDB Tower Bosses & Hard Mode tracking for OBS capture.
+            Interactive overlay dashboard with official Palworld Tower Bosses & Hard Mode tracking for OBS capture.
           </p>
         </div>
 

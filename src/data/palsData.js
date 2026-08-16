@@ -1,4 +1,4 @@
-// Palworld Full Database with Live PalDB Icons (288 Pals)
+// Palworld Full Database (299 Pals)
 export const ELEMENTS = {
   Neutral: { color: '#e2e8f0', glow: '#cbd5e1', icon: '⚪', bg: 'rgba(226, 232, 240, 0.15)', border: '#94a3b8' },
   Fire: { color: '#ff5722', glow: '#ff7043', icon: '🔥', bg: 'rgba(255, 87, 34, 0.15)', border: '#ff7043' },
