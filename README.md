@@ -108,9 +108,9 @@ A feature-rich, high-performance web application designed for **Palworld Content
    ```
 
 3. **Start Development Server**:
-   ```bash
-   npm run dev
-   ```
+   - **Method A (1-Click Windows Batch)**: Double click `run.bat`
+   - **Method B (Terminal)**: Run `npm run dev`
+   
    Open your browser at `http://localhost:5173/`.
 
 4. **Build Production Bundle**:

@@ -1,0 +1,3 @@
+@echo off
+echo Starting Vite Development Server...
+cmd /k "npm run dev"
