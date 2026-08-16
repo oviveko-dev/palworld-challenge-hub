@@ -280,7 +280,7 @@ export default function PaldexExplorer({ masteredVault, onToggleVault, onSelectP
                     padding: '4px'
                   }}>
                     {pal.image ? (
-                      <img src={pal.image} alt={pal.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                      <img src={pal.image} alt={pal.name} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                     ) : (
                       <span style={{ fontSize: '1.6rem' }}>{elemData.icon}</span>
                     )}

@@ -22,6 +22,13 @@
   --shadow-card: 0 12px 30px rgba(0, 0, 0, 0.5);
 }
 
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -195,7 +202,7 @@ h1, h2, h3, h4, .font-display {
   animation: spinSlow 20s linear infinite;
 }
 
-/* Wheel Canvas Wrapper */
+/* Wheel Canvas Container */
 .wheel-container {
   position: relative;
   display: flex;
@@ -215,4 +222,91 @@ h1, h2, h3, h4, .font-display {
   border-top: 35px solid #ff2a6d;
   filter: drop-shadow(0 4px 10px rgba(255, 42, 109, 0.8));
   z-index: 10;
+}
+
+/* Main Studio Grid Layout */
+.studio-grid {
+  display: grid;
+  grid-template-columns: 270px 1fr 340px;
+  gap: 20px;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+/* RESPONSIVE MEDIA QUERIES FOR SMARTPHONES & TABLETS */
+@media (max-width: 1200px) {
+  .studio-grid {
+    grid-template-columns: 240px 1fr 300px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .studio-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navbar Responsive Horizontal Touch Scroll */
+  .navbar-nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    display: flex !important;
+    gap: 8px !important;
+  }
+  .navbar-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .btn-nav {
+    flex-shrink: 0;
+    font-size: 0.8rem !important;
+    padding: 8px 12px !important;
+  }
+
+  /* Wheel Canvas Mobile Touch Scaling */
+  .wheel-canvas {
+    max-width: 320px !important;
+    max-height: 320px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Glass Panels Padding */
+  .glass-panel {
+    padding: 16px !important;
+    border-radius: 14px !important;
+  }
+
+  h1 {
+    font-size: 1.8rem !important;
+  }
+  h2 {
+    font-size: 1.4rem !important;
+  }
+
+  /* Button Touch Targets */
+  .btn-cyber, .btn-gold, .btn-danger {
+    padding: 10px 18px !important;
+    font-size: 0.85rem !important;
+    min-height: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .wheel-canvas {
+    max-width: 280px !important;
+    max-height: 280px !important;
+  }
+  h1 {
+    font-size: 1.5rem !important;
+  }
 }

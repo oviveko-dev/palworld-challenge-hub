@@ -555,13 +555,7 @@ export default function PalWheel({ masteredVault, onToggleVault, onSelectPalForC
       </div>
 
       {/* Main 3-Column Studio Dashboard Grid */}
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: '270px 1fr 340px',
-        gap: '20px',
-        alignItems: 'start',
-        marginBottom: '20px'
-      }}>
+      <div className="studio-grid">
         
         {/* LEFT COLUMN: SPECIAL FILTERS SIDEBAR */}
         <div className="glass-panel" style={{ padding: '20px', borderRadius: '16px', border: '1px solid var(--border-glass)' }}>
@@ -661,11 +655,14 @@ export default function PalWheel({ masteredVault, onToggleVault, onSelectPalForC
             width={480}
             height={480}
             onClick={spinWheel}
+            className="wheel-canvas"
             style={{
               cursor: isSpinning ? 'wait' : 'pointer',
               borderRadius: '50%',
               boxShadow: '0 0 35px rgba(0, 240, 255, 0.35)',
-              transition: 'transform 0.1s ease'
+              transition: 'transform 0.1s ease',
+              maxWidth: '100%',
+              height: 'auto'
             }}
           />
         </div>

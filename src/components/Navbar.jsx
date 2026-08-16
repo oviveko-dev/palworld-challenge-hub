@@ -51,7 +51,7 @@ export default function Navbar({ activeTab, setActiveTab, masteredCount, muted, 
         </div>
 
         {/* Navigation Tabs */}
-        <nav style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+        <nav className="navbar-nav" style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
           <button
             onClick={() => setActiveTab('wheel')}
             className={`btn-nav ${activeTab === 'wheel' ? 'active' : ''}`}
