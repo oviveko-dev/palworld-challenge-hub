@@ -31,6 +31,19 @@ A feature-rich, high-performance web application designed for **Palworld Content
 
 ---
 
+## 📸 Application Screenshots
+
+### 🎡 1. Interactive Wheel of Pals Dashboard
+![Wheel of Pals Studio Dashboard](./public/preview_wheel.png)
+
+### ⚔️ 2. Viral Challenge & YouTube Idea Generator
+![Viral Challenge & YouTube Idea Generator](./public/preview_generator.png)
+
+### 📺 3. Streamer & Creator HUD (Tower Boss Tracker)
+![Streamer Overlay HUD](./public/preview_hud.png)
+
+---
+
 ## 🌟 Key Features
 
 ### 🎡 1. Interactive Wheel of Pals (Studio Dashboard)
@@ -122,7 +135,7 @@ To push updates to your GitHub repository:
 git add .
 
 # 2. Commit changes
-git commit -m "Update README with live Vercel link"
+git commit -m "Add application screenshots to README.md"
 
 # 3. Push to GitHub main branch
 git push -u origin main
