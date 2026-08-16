@@ -27,28 +27,26 @@ export default function Navbar({ activeTab, setActiveTab, masteredCount, muted, 
         flexWrap: 'wrap',
         gap: '16px'
       }}>
-        {/* Brand */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }} onClick={() => setActiveTab('wheel')}>
-          <div style={{
-            width: '42px',
-            height: '42px',
-            borderRadius: '12px',
-            background: 'linear-gradient(135deg, #00f0ff 0%, #7000ff 100%)',
+        {/* Brand Logo Banner */}
+        <div
+          onClick={() => setActiveTab('wheel')}
+          style={{
+            cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
-            boxShadow: '0 0 15px rgba(0, 240, 255, 0.4)'
-          }}>
-            <Flame size={24} color="#ffffff" />
-          </div>
-          <div>
-            <h1 style={{ fontSize: '1.4rem', fontWeight: 900, textTransform: 'uppercase', margin: 0, lineHeight: 1.1 }}>
-              PALWORLD <span className="gradient-text">HUB</span>
-            </h1>
-            <p style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 600, margin: 0 }}>
-              ULTIMATE CHALLENGE & PAL PICKER
-            </p>
-          </div>
+            transition: 'transform 0.2s ease, filter 0.2s ease'
+          }}
+        >
+          <img
+            src="/palworld_hub_logo.png"
+            alt="Palworld Hub - Ultimate Challenge & Pal Picker"
+            style={{
+              height: '52px',
+              maxWidth: '320px',
+              objectFit: 'contain',
+              filter: 'drop-shadow(0 0 12px rgba(0, 240, 255, 0.4))'
+            }}
+          />
         </div>
 
         {/* Navigation Tabs */}

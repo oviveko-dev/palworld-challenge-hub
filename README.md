@@ -2,7 +2,11 @@
 
 <div align="center">
 
-<img src="./public/oviveko_logo.png" width="120" height="120" style="border-radius: 50%; border: 3px solid #00f0ff;" alt="OVIVEKO Logo" />
+<img src="./public/palworld_hub_logo.png" width="100%" style="max-width: 800px;" alt="Palworld Hub Banner" />
+
+<br/><br/>
+
+<img src="./public/oviveko_logo.png" width="90" height="90" style="border-radius: 50%; border: 3px solid #00f0ff;" alt="OVIVEKO Logo" />
 
 ### Created & Developed by **OVIVEKO**
 

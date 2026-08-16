@@ -117,22 +117,7 @@ export default function PalWheel({ masteredVault, onToggleVault, onSelectPalForC
       return;
     }
 
-    const totalPals = eligiblePals.length;
-    const arc = (Math.PI * 2) / totalPals;
-
-    // Determine label drawing interval and font size based on slice count to prevent text overlap
-    let labelInterval = 1;
-    let fontSize = 'bold 12px Outfit';
-    if (totalPals > 120) {
-      labelInterval = Math.ceil(totalPals / 36); // Max 36 labels around circle for 299 Pals
-      fontSize = 'bold 9px Inter';
-    } else if (totalPals > 60) {
-      labelInterval = Math.ceil(totalPals / 40);
-      fontSize = 'bold 10px Inter';
-    } else if (totalPals > 35) {
-      labelInterval = 1;
-      fontSize = 'bold 10px Inter';
-    }
+    const arc = (Math.PI * 2) / eligiblePals.length;
 
     eligiblePals.forEach((pal, idx) => {
       const startAngle = angleOffset + idx * arc;
@@ -151,30 +136,20 @@ export default function PalWheel({ masteredVault, onToggleVault, onSelectPalForC
       ctx.fillStyle = grad;
       ctx.fill();
 
-      // Divider line
-      ctx.strokeStyle = totalPals > 150 ? 'rgba(13, 18, 29, 0.4)' : 'rgba(13, 18, 29, 0.9)';
-      ctx.lineWidth = totalPals > 150 ? 0.8 : 1.5;
+      ctx.strokeStyle = 'rgba(13, 18, 29, 0.9)';
+      ctx.lineWidth = 1.5;
       ctx.stroke();
 
-      // Render text label only at interval to ensure zero text overlapping
-      if (idx % labelInterval === 0) {
-        ctx.save();
-        ctx.translate(centerX, centerY);
-        ctx.rotate(startAngle + arc / 2);
-        ctx.textAlign = 'right';
-        ctx.fillStyle = '#ffffff';
-        ctx.font = fontSize;
-        ctx.shadowColor = '#000000';
-        ctx.shadowBlur = 6;
-
-        let displayName = pal.name;
-        if (totalPals > 70 && displayName.length > 12) {
-          displayName = displayName.substring(0, 10) + '..';
-        }
-
-        ctx.fillText(`${elemData.icon} ${displayName}`, radius - 14, 3);
-        ctx.restore();
-      }
+      ctx.save();
+      ctx.translate(centerX, centerY);
+      ctx.rotate(startAngle + arc / 2);
+      ctx.textAlign = 'right';
+      ctx.fillStyle = '#ffffff';
+      ctx.font = eligiblePals.length > 25 ? 'bold 10px Inter' : 'bold 12px Outfit';
+      ctx.shadowColor = '#000000';
+      ctx.shadowBlur = 6;
+      ctx.fillText(`${elemData.icon} ${pal.name}`, radius - 16, 4);
+      ctx.restore();
     });
 
     // Outer wheel glowing neon ring
