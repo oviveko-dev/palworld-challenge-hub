@@ -1,25 +1,38 @@
 # 🔥 Palworld Hub - Ultimate Challenge & Pal Picker
 
+<div align="center">
+
+<img src="./public/oviveko_logo.png" width="120" height="120" style="border-radius: 50%; border: 3px solid #00f0ff;" alt="OVIVEKO Logo" />
+
+### Created & Developed by **OVIVEKO**
+
+[![Work Email](https://img.shields.io/badge/Work_Email-workforoviveko%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:workforoviveko@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-oviveko--dev-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/oviveko-dev)
+[![X (Twitter)](https://img.shields.io/badge/X-@OVIVEKO-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/OVIVEKO)
+[![YouTube](https://img.shields.io/badge/YouTube-@oviveko-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@oviveko)
+
 [![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite)](https://vitejs.dev/)
-[![Author](https://img.shields.io/badge/Author-OVIVEKO-00F0FF?logo=github)](https://github.com/oviveko-dev)
-[![YouTube](https://img.shields.io/badge/YouTube-@oviveko-FF0000?logo=youtube)](https://www.youtube.com/@oviveko)
-[![X](https://img.shields.io/badge/X-@OVIVEKO-1DA1F2?logo=x)](https://x.com/OVIVEKO)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Palworld](https://img.shields.io/badge/Palworld-v0.4.x-FF6F00)](https://paldb.cc/)
+
+</div>
+
+---
 
 A feature-rich, high-performance web application designed for **Palworld Content Creators, Streamers, and Hardcore Challenge Players** to pick Pals, build combat challenges, draft teams, and track mastered Pals!
 
 ---
 
-## 👨‍💻 Author & Connect With Me
+## 👨‍💻 Creator & Contact Information
 
-Crafted with ❤️ by **OVIVEKO**:
-
-- **💻 GitHub**: [github.com/oviveko-dev](https://github.com/oviveko-dev)
-- **▶️ YouTube**: [@oviveko](https://www.youtube.com/@oviveko)
-- **🐦 X (Twitter)**: [@OVIVEKO](https://x.com/OVIVEKO)
-- **✉️ Work Email**: [workforoviveko@gmail.com](mailto:workforoviveko@gmail.com)
+| Channel / Platform | Link & Details |
+| :--- | :--- |
+| 👤 **Developer / Creator** | **OVIVEKO** |
+| 📧 **Work Email** | [workforoviveko@gmail.com](mailto:workforoviveko@gmail.com) |
+| 🐱 **GitHub Profile** | [github.com/oviveko-dev](https://github.com/oviveko-dev) |
+| 𝕏 **X (Twitter)** | [@OVIVEKO (x.com/OVIVEKO)](https://x.com/OVIVEKO) |
+| ▶️ **YouTube Channel** | [@oviveko (youtube.com/@oviveko)](https://www.youtube.com/@oviveko) |
 
 ---
 
@@ -105,24 +118,18 @@ Crafted with ❤️ by **OVIVEKO**:
 
 ---
 
-## 📤 How to Push to GitHub
+## 📤 Push to GitHub
 
-Follow these simple commands in your terminal to push your repository to GitHub:
+To push updates to your GitHub repository:
 
 ```bash
-# 1. Rename branch to main
-git branch -M main
-
-# 2. Stage all project files
+# 1. Stage all project files
 git add .
 
-# 3. Commit files
-git commit -m "Initial commit: Palworld Challenge Hub & Ultimate Pal Picker"
+# 2. Commit changes
+git commit -m "Update creator profile and contact info for OVIVEKO"
 
-# 4. Add your GitHub remote repository link (Create a new empty repo on GitHub first)
-git remote add origin https://github.com/oviveko-dev/palworld-challenge-hub.git
-
-# 5. Push code to GitHub
+# 3. Push to GitHub main branch
 git push -u origin main
 ```
 
@@ -130,5 +137,5 @@ git push -u origin main
 
 ## 📄 License
 
-This project is open-source under the [MIT License](LICENSE).
+This project is created by **[OVIVEKO](https://github.com/oviveko-dev)** under the [MIT License](LICENSE).
 Palworld assets and image URLs belong to Pocketpair, Inc. and PalDB.cc.

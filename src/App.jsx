@@ -6,6 +6,7 @@ import MasteredVault from './components/MasteredVault';
 import ChallengeGenerator from './components/ChallengeGenerator';
 import StreamOverlayHUD from './components/StreamOverlayHUD';
 import PaldexExplorer from './components/PaldexExplorer';
+import Footer from './components/Footer';
 
 import {
   getMasteredVault,
@@ -149,57 +150,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer style={{
-        textAlign: 'center',
-        padding: '24px 16px',
-        borderTop: '1px solid var(--border-glass)',
-        background: 'rgba(13, 18, 29, 0.85)',
-        color: '#94a3b8',
-        fontSize: '0.85rem',
-        marginTop: 'auto'
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
-          <div>
-            PALWORLD CHALLENGE HUB &copy; {new Date().getFullYear()} &bull; Crafted by <strong style={{ color: '#00f0ff' }}>OVIVEKO</strong>
-          </div>
-
-          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', marginTop: '4px' }}>
-            <a
-              href="https://www.youtube.com/@oviveko"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: '#ff0000', textDecoration: 'none', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}
-            >
-              ▶ YouTube (@oviveko)
-            </a>
-
-            <a
-              href="https://x.com/OVIVEKO"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: '#1da1f2', textDecoration: 'none', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}
-            >
-              🐦 X / Twitter (@OVIVEKO)
-            </a>
-
-            <a
-              href="https://github.com/oviveko-dev"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: '#fff', textDecoration: 'none', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}
-            >
-              💻 GitHub (@oviveko-dev)
-            </a>
-
-            <a
-              href="mailto:workforoviveko@gmail.com"
-              style={{ color: '#ffd166', textDecoration: 'none', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '4px' }}
-            >
-              ✉️ Email (workforoviveko@gmail.com)
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

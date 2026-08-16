@@ -29,24 +29,24 @@ export default function Navbar({ activeTab, setActiveTab, masteredCount, muted, 
       }}>
         {/* Brand */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }} onClick={() => setActiveTab('wheel')}>
-          <div style={{
-            width: '42px',
-            height: '42px',
-            borderRadius: '12px',
-            background: 'linear-gradient(135deg, #00f0ff 0%, #7000ff 100%)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            boxShadow: '0 0 15px rgba(0, 240, 255, 0.4)'
-          }}>
-            <Flame size={24} color="#ffffff" />
-          </div>
+          <img
+            src="/oviveko_logo.png"
+            alt="OVIVEKO Logo"
+            style={{
+              width: '42px',
+              height: '42px',
+              borderRadius: '12px',
+              border: '2px solid #00f0ff',
+              boxShadow: '0 0 15px rgba(0, 240, 255, 0.4)',
+              objectFit: 'cover'
+            }}
+          />
           <div>
-            <h1 style={{ fontSize: '1.4rem', fontWeight: 900, textTransform: 'uppercase' }}>
+            <h1 style={{ fontSize: '1.4rem', fontWeight: 900, textTransform: 'uppercase', margin: 0, lineHeight: 1.1 }}>
               PALWORLD <span className="gradient-text">HUB</span>
             </h1>
-            <p style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 600 }}>
-              ULTIMATE CHALLENGE & PAL PICKER
+            <p style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 600, margin: 0 }}>
+              BY <span style={{ color: '#00f0ff', fontWeight: 800 }}>OVIVEKO</span> &bull; ULTIMATE PAL PICKER
             </p>
           </div>
         </div>
