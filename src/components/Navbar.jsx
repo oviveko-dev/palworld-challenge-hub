@@ -96,7 +96,7 @@ export default function Navbar({ activeTab, setActiveTab, masteredCount, muted, 
             className={`btn-nav ${activeTab === 'generator' ? 'active' : ''}`}
             style={navBtnStyle(activeTab === 'generator')}
           >
-            <img src="/favicon.png" alt="Idea Builder" style={{ width: '18px', height: '18px', borderRadius: '50%', objectFit: 'cover' }} />
+            <Flame size={18} />
             Idea Builder
           </button>
 
