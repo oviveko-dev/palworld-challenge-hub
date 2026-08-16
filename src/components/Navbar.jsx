@@ -41,11 +41,11 @@ export default function Navbar({ activeTab, setActiveTab, masteredCount, muted, 
             src="/palworld_hub_banner.png"
             alt="Palworld Hub - Ultimate Challenge & Pal Picker"
             style={{
-              height: '52px',
+              height: '70px',
               width: 'auto',
-              maxHeight: '52px',
+              maxHeight: '70px',
               objectFit: 'contain',
-              filter: 'drop-shadow(0 0 10px rgba(0, 240, 255, 0.3))'
+              filter: 'drop-shadow(0 0 14px rgba(0, 240, 255, 0.45))'
             }}
           />
         </div>
