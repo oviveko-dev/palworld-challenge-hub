@@ -34,17 +34,18 @@ export default function Navbar({ activeTab, setActiveTab, masteredCount, muted, 
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
-            transition: 'transform 0.2s ease, filter 0.2s ease'
+            transition: 'transform 0.2s ease'
           }}
         >
           <img
-            src="/palworld_hub_logo.png"
+            src="/palworld_hub_banner.png"
             alt="Palworld Hub - Ultimate Challenge & Pal Picker"
             style={{
-              height: '76px',
-              maxWidth: '460px',
+              height: '52px',
+              width: 'auto',
+              maxHeight: '52px',
               objectFit: 'contain',
-              filter: 'drop-shadow(0 0 16px rgba(0, 240, 255, 0.5))'
+              filter: 'drop-shadow(0 0 10px rgba(0, 240, 255, 0.3))'
             }}
           />
         </div>
@@ -95,7 +96,7 @@ export default function Navbar({ activeTab, setActiveTab, masteredCount, muted, 
             className={`btn-nav ${activeTab === 'generator' ? 'active' : ''}`}
             style={navBtnStyle(activeTab === 'generator')}
           >
-            <img src="/lamball_icon.png" style={{ width: '18px', height: '18px', borderRadius: '50%', objectFit: 'cover' }} alt="Idea Builder" />
+            <Flame size={18} />
             Idea Builder
           </button>
 
