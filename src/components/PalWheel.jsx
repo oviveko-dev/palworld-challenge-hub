@@ -22,6 +22,8 @@ export default function PalWheel({ masteredVault, onToggleVault, onSelectPalForC
   const canvasRef = useRef(null);
   const currentAngleRef = useRef(0);
   const spinReqRef = useRef(null);
+  const lastTickTimeRef = useRef(0);
+  const lastSegmentRef = useRef(-1);
 
   const palList = allPals || PALS_DATA;
 
@@ -117,9 +119,12 @@ export default function PalWheel({ masteredVault, onToggleVault, onSelectPalForC
       return;
     }
 
-    const arc = (Math.PI * 2) / eligiblePals.length;
+    const totalPals = eligiblePals.length;
+    const arc = (Math.PI * 2) / totalPals;
+    const showSliceLabels = totalPals <= 100;
 
-    eligiblePals.forEach((pal, idx) => {
+    for (let idx = 0; idx < totalPals; idx++) {
+      const pal = eligiblePals[idx];
       const startAngle = angleOffset + idx * arc;
       const endAngle = startAngle + arc;
       const primaryElement = pal.elements[0];
@@ -130,27 +135,27 @@ export default function PalWheel({ masteredVault, onToggleVault, onSelectPalForC
       ctx.arc(centerX, centerY, radius, startAngle, endAngle);
       ctx.closePath();
 
-      const grad = ctx.createRadialGradient(centerX, centerY, 40, centerX, centerY, radius);
-      grad.addColorStop(0, elemData.bg);
-      grad.addColorStop(1, elemData.color + 'cc');
-      ctx.fillStyle = grad;
+      // Fast solid element color fill without allocating radial gradient objects 60 times/sec
+      ctx.fillStyle = elemData.color;
       ctx.fill();
 
-      ctx.strokeStyle = 'rgba(13, 18, 29, 0.9)';
-      ctx.lineWidth = 1.5;
+      // Thin slice border
+      ctx.strokeStyle = 'rgba(7, 9, 14, 0.7)';
+      ctx.lineWidth = totalPals > 100 ? 0.5 : 1.2;
       ctx.stroke();
 
-      ctx.save();
-      ctx.translate(centerX, centerY);
-      ctx.rotate(startAngle + arc / 2);
-      ctx.textAlign = 'right';
-      ctx.fillStyle = '#ffffff';
-      ctx.font = eligiblePals.length > 25 ? 'bold 10px Inter' : 'bold 12px Outfit';
-      ctx.shadowColor = '#000000';
-      ctx.shadowBlur = 6;
-      ctx.fillText(`${elemData.icon} ${pal.name}`, radius - 16, 4);
-      ctx.restore();
-    });
+      // Draw slice label text only when totalPals <= 100
+      if (showSliceLabels) {
+        ctx.save();
+        ctx.translate(centerX, centerY);
+        ctx.rotate(startAngle + arc / 2);
+        ctx.textAlign = 'right';
+        ctx.fillStyle = '#ffffff';
+        ctx.font = totalPals > 30 ? 'bold 9px Inter, sans-serif' : 'bold 11px Outfit, sans-serif';
+        ctx.fillText(`${elemData.icon} ${pal.name}`, radius - 14, 4);
+        ctx.restore();
+      }
+    }
 
     // Outer wheel glowing neon ring
     ctx.beginPath();
@@ -158,7 +163,7 @@ export default function PalWheel({ masteredVault, onToggleVault, onSelectPalForC
     ctx.strokeStyle = '#00f0ff';
     ctx.lineWidth = 6;
     ctx.shadowColor = '#00f0ff';
-    ctx.shadowBlur = 20;
+    ctx.shadowBlur = 16;
     ctx.stroke();
     ctx.shadowBlur = 0;
 
@@ -192,6 +197,8 @@ export default function PalWheel({ masteredVault, onToggleVault, onSelectPalForC
     const duration = 4500;
     const startTime = performance.now();
     const startAngle = currentAngleRef.current;
+    const palCount = eligiblePals.length;
+    const arc = (Math.PI * 2) / palCount;
 
     const animate = (now) => {
       const elapsed = now - startTime;
@@ -204,11 +211,11 @@ export default function PalWheel({ masteredVault, onToggleVault, onSelectPalForC
 
       drawWheel(currentAngle);
 
-      // Procedural Web Audio Tick
-      const arc = (Math.PI * 2) / eligiblePals.length;
-      const prevSegment = Math.floor((startAngle) / arc);
+      // Throttle procedural Web Audio ticks to max 35ms (prevent audio buffer lag)
       const currentSegment = Math.floor((currentAngle) / arc);
-      if (currentSegment > prevSegment) {
+      if (currentSegment !== lastSegmentRef.current && (now - lastTickTimeRef.current > 35)) {
+        lastSegmentRef.current = currentSegment;
+        lastTickTimeRef.current = now;
         sound.playTick();
       }
 
